@@ -5,11 +5,11 @@ def cal_points(array)
   record = []
   array.each_with_index do |op, i|
     if op == "+"
-      puts "es +"
+      record.push(record[-1] + record[-2])
     elsif op == "D"
-      puts "es D"
+      record.push(record[-1] * 2)
     elsif op == "C"
-      puts "es C"
+      record.pop
     else
       record.push(op.to_i)
     end
