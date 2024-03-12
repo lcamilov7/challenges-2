@@ -3,7 +3,7 @@
 
 def cal_points(array)
   record = []
-  array.each_with_index do |op, i|
+  array.each do |op|
     if op == "+"
       record.push(record[-1] + record[-2])
     elsif op == "D"
