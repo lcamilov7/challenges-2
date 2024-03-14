@@ -1,8 +1,8 @@
 def pedir_minimo
   puts 'Por favor ingrese el número entero menor'
   minimum = gets.chomp
-  while /[,.]/.match?(minimum) || /[a-zA-Z]/.match?(minimum)
-    puts 'No has ingresado un entero o has ingresado una letra, debe ser un entero, prueba nuevamente'
+  while /[,.]/.match?(minimum) || /[a-zA-Z]/.match?(minimum) || minimum.to_i.negative?
+    puts 'No has ingresado un entero o has ingresado una letra o un negativo, debe ser un entero, prueba nuevamente'
     minimum = gets.chomp
   end
   minimum = minimum.to_i
