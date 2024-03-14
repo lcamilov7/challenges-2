@@ -1,6 +1,6 @@
-require_relative 'pedirNumeros'
+require_relative 'pedir_numeros'
 require_relative 'funcion'
-require_relative 'stringFinal'
+require_relative 'string_final'
 
 puts 'Bienvenido a la aplicación para determinar los números naturales perfectos en dado un rango de números'
 minimum = pedir_minimo
