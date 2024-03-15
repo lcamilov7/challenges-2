@@ -1,11 +1,11 @@
 def solution(index)
-  stack = []
+  stack = [[1]]
   i = 1
 
-  (index + 1).times do
+  (index).times do
     row = []
 
-    i.times do
+    (i + 1).times do
       row.push(1)
     end
 
@@ -24,6 +24,8 @@ def show(stack)
     puts string
   end
 end
-
-stack = solution(3)
+puts "Ingrese el indice"
+index = gets.chomp.to_i
+puts "\n"
+stack = solution(index)
 show(stack)
