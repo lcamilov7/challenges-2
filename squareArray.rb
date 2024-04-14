@@ -16,3 +16,5 @@ def squares(x, n)
 end
 
 puts(squares(2, 5))
+
+# Challenges -2 
